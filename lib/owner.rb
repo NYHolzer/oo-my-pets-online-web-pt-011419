@@ -63,6 +63,7 @@ class Owner
   
   def sell_pets 
     @pets.each do |type, array|
+<<<<<<< HEAD
       array.each do |animal|
         animal.mood = "nervous"
       end 
@@ -75,6 +76,12 @@ class Owner
     dog_count = @pets[:dogs].count 
     cat_count = @pets[:cats].count
     "I have #{fish_count} fish, #{dog_count} dog(s), and #{cat_count} cat(s)."
+=======
+      [type][array].each do |animal|
+        binding.pry
+      end 
+    end
+>>>>>>> 05b8da46adc8725b0ca6c8bfdc4502f4ca56ba08
   end 
   
 end
